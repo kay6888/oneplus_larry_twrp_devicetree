@@ -2,11 +2,12 @@ on:
   workflow_dispatch:
     inputs:
       MANIFEST_BRANCH:
-      
-push:
-    branches:
-      - main
-
+        description: 'TWRP Manifest Branch'
+        required: true
+        default: ''
+        type: choice
+        options:
+        - twrp-12.1
 jobs:
   modify_device_tree:
     runs-on: ubuntu-latest
