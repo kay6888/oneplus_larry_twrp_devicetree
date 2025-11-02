@@ -1,14 +1,4 @@
-on:
-  workflow_dispatch:
-    inputs:
-      chosen-os:
-        required: true
-        type: choice
-        options:
-        - Ubuntu
         
-name: Modify Device Tree for TWRP
-
 on:
   push:
     branches:
