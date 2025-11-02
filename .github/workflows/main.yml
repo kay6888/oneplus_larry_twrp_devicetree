@@ -53,8 +53,8 @@ jobs:
       - name: Push Modified Device Tree to GitHub
         run: |
           # Add the changes to git, commit and push them back to the repo
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "kay6888"
+          git config user.email "kay6888@github.com"
           git add .
           git commit -m "Modify device tree for TWRP support"
           git push origin main
